@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">CoolMusic</string>
+    <string name="app_name">酷音乐</string>
+    <string name="img_content_description">这是一张图片</string>
 </resources>
