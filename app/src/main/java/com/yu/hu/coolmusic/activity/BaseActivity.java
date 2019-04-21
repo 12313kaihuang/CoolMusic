@@ -1,11 +1,15 @@
 package com.yu.hu.coolmusic.activity;
 
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 import com.yu.hu.coolmusic.R;
+import com.yu.hu.coolmusic.presenter.Presenter;
+
+import java.util.List;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 
 /**
@@ -28,7 +32,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(getLayoutId());
-        onPrepare();
+
+        prepare();
     }
 
     /**
@@ -38,6 +43,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     @LayoutRes
     protected int getLayoutId() {
         return R.layout.activity_base;
+    }
+
+    private void prepare(){
+        onPrepare();
     }
 
     /**

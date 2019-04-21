@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="InputView">
+        <!--输入框前面的小图标-->
+        <attr name="input_icon" format="reference" />
+        <!--提示内容-->
+        <attr name="input_hint" format="string" />
+        <!--输入类型-->
+        <attr name="input_type">
+            <enum name="phone" value="0"/>
+            <enum name="textPassword" value="1"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
