@@ -30,6 +30,10 @@
 
         <!--注册-->
         <activity android:name=".page.register.RegisterActivity" />
+
+        <!--个人中心-->
+        <activity android:name=".page.personal.PersonalActivity" />
+        <activity android:name=".page.changepassword.ChangePasswordActivity" />
     </application>
 
 </manifest>
