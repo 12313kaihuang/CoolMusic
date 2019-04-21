@@ -30,11 +30,13 @@ public class LoginPresenter extends Presenter {
 
     @OnClick(R.id.btn_login)
     public void login() {
-        if (UserUtil.validateLogin(mPhoneInputView.getInputContent(),
-                mPasswordInputView.getInputContent())) {
-            ActivityUtils.startActivity(new Intent(getCurrentActivity(), MainActivity.class));
-            ActivityUtils.finishActivity(getCurrentActivity());
-        }
+        ActivityUtils.startActivity(new Intent(getCurrentActivity(), MainActivity.class));
+        ActivityUtils.finishActivity(getCurrentActivity(),true);
+        //        if (UserUtil.validateLogin(mPhoneInputView.getInputContent(),
+        //                mPasswordInputView.getInputContent())) {
+        //            ActivityUtils.startActivity(new Intent(getCurrentActivity(), MainActivity.class));
+        //            ActivityUtils.finishActivity(getCurrentActivity(),true);
+        //        }
     }
 
 }

@@ -2,7 +2,9 @@ package com.yu.hu.coolmusic.page.main.fragment;
 
 import com.yu.hu.coolmusic.R;
 import com.yu.hu.coolmusic.fragment.BaseFragment;
+import com.yu.hu.coolmusic.page.login.ToRegisterPresenter;
 import com.yu.hu.coolmusic.page.main.TitleBarPresenter;
+import com.yu.hu.coolmusic.page.main.ToPersonPresenter;
 import com.yu.hu.coolmusic.presenter.Presenter;
 
 import java.util.ArrayList;
@@ -33,8 +35,12 @@ public class MainFragment extends BaseFragment {
     @Override
     protected List<Presenter> getPresenters() {
         List<Presenter> presenterList = new ArrayList<>();
+        //标题栏
         presenterList.add(new TitleBarPresenter(false,true,
                 getResources().getString(R.string.app_name)));
+
+        //跳转到个人中心
+        presenterList.add(new ToPersonPresenter());
         return presenterList;
     }
 }
