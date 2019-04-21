@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/marginSize"
+    android:layout_marginEnd="@dimen/marginSize"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/marginSize">
+
+    <ImageView
+        android:id="@+id/iv_input_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/img_content_description"
+        android:src="@drawable/ic_phone" />
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edit_text_bg"
+        android:inputType="text"
+        android:labelFor="@id/et_input"
+        android:textCursorDrawable="@drawable/edit_cursor_color"
+        android:textSize="18sp"
+        tools:ignore="Autofill" />
+
+
+</LinearLayout>

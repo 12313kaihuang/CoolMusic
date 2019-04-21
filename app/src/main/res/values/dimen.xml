@@ -3,4 +3,5 @@
     <dimen name="navBarHeight">56dp</dimen>
     <dimen name="navBarTextSize">22sp</dimen>
     <dimen name="marginSize">12dp</dimen>
+    <dimen name="radius">5dp</dimen>
 </resources>

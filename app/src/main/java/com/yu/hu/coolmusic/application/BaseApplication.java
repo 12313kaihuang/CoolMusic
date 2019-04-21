@@ -2,6 +2,8 @@ package com.yu.hu.coolmusic.application;
 
 import android.app.Application;
 
+import com.blankj.utilcode.util.Utils;
+
 /**
  * 项目名：IMoocMusic
  * 包名：  com.yu.hu.imoocmusic.application
@@ -15,5 +17,8 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        //初始化AndroidUtilCode
+        Utils.init(this);
     }
 }

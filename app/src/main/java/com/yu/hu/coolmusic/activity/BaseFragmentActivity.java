@@ -1,12 +1,13 @@
 package com.yu.hu.coolmusic.activity;
 
 import android.os.Bundle;
-import android.support.annotation.IdRes;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentTransaction;
 
 import com.yu.hu.coolmusic.R;
 import com.yu.hu.coolmusic.fragment.BaseFragment;
+
+import androidx.annotation.IdRes;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.FragmentTransaction;
 
 /**
  * 项目名：IMoocMusic
@@ -21,7 +22,7 @@ import com.yu.hu.coolmusic.fragment.BaseFragment;
  *
  * @see #getLayoutId()
  * @see #getContentFragmentId()
- * @see #buildCurrentFragment()
+ * @see #buildFragment()
  */
 public abstract class BaseFragmentActivity extends BaseActivity {
 
@@ -40,7 +41,7 @@ public abstract class BaseFragmentActivity extends BaseActivity {
      * 设置fragment
      */
     private void replaceFragment() {
-        replaceFragment(getContentFragmentId(), buildCurrentFragment());
+        replaceFragment(getContentFragmentId(), buildFragment());
     }
 
     /**
@@ -58,9 +59,9 @@ public abstract class BaseFragmentActivity extends BaseActivity {
     }
 
     /**
-     * 设置当前所显示的 fragment
+     * 加载所要显示的 fragment
      */
-    public abstract BaseFragment buildCurrentFragment();
+    public abstract BaseFragment buildFragment();
 
 
     /**

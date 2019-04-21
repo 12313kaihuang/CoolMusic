@@ -21,8 +21,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--登录-->
         <activity android:name=".page.login.LoginActivity" />
-        <activity android:name=".page.main.MainActivity" />
+
+        <!--MainActivity-->
+        <activity android:name=".MainActivity" />
+
+        <!--注册-->
+        <activity android:name=".page.register.RegisterActivity" />
     </application>
 
 </manifest>

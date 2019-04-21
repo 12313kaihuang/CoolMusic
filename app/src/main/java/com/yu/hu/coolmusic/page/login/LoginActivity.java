@@ -14,7 +14,7 @@ import com.yu.hu.coolmusic.fragment.BaseFragment;
 public class LoginActivity extends BaseFragmentActivity {
 
     @Override
-    public BaseFragment buildCurrentFragment() {
-        return null;
+    public BaseFragment buildFragment() {
+        return LoginFragment.newInstance();
     }
 }

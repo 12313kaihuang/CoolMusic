@@ -4,7 +4,9 @@ import android.content.Intent;
 
 import com.yu.hu.coolmusic.R;
 import com.yu.hu.coolmusic.activity.BaseActivity;
-import com.yu.hu.coolmusic.page.main.MainActivity;
+import com.yu.hu.coolmusic.MainActivity;
+import com.yu.hu.coolmusic.page.login.LoginActivity;
+import com.yu.hu.coolmusic.page.login.LoginFragment;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -31,7 +33,7 @@ public class SplashActivity extends BaseActivity {
             @Override
             public void run() {
                 //主线程中进行
-                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashActivity.this, LoginActivity.class));
                 finish();
             }
         }, 3000);
