@@ -11,7 +11,8 @@
         android:layout_gravity="center_vertical"
         android:layout_marginStart="8dp"
         android:contentDescription="@string/img_content_description"
-        android:src="@drawable/ic_back" />
+        android:src="@drawable/ic_back"
+        android:visibility="invisible" />
 
     <TextView
         android:id="@+id/tv_title"
@@ -29,5 +30,6 @@
         android:layout_gravity="end|center_vertical"
         android:layout_marginEnd="@dimen/marginSize"
         android:contentDescription="@string/img_content_description"
-        android:src="@drawable/ic_personal" />
+        android:src="@drawable/ic_personal"
+        android:visibility="invisible" />
 </FrameLayout>

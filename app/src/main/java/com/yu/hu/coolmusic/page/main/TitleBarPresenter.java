@@ -1,13 +1,14 @@
 package com.yu.hu.coolmusic.page.main;
 
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.blankj.utilcode.util.ActivityUtils;
 import com.yu.hu.coolmusic.R;
 import com.yu.hu.coolmusic.presenter.Presenter;
 
 import butterknife.BindView;
+import butterknife.OnClick;
 
 import static android.view.View.VISIBLE;
 import static android.view.View.INVISIBLE;
@@ -49,5 +50,13 @@ public class TitleBarPresenter extends Presenter {
             mLeftImageView.setVisibility(mLeftImgVisible ? VISIBLE : INVISIBLE);
             mRightImageView.setVisibility(mRightImgVisible ? VISIBLE : INVISIBLE);
         }
+    }
+
+    /**
+     * 返回点击事件
+     */
+    @OnClick(R.id.iv_left)
+    public void onBackPressed() {
+        getCurrentActivity().onBackPressed();
     }
 }

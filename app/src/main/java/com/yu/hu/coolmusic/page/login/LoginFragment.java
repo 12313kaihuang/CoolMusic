@@ -20,7 +20,7 @@ import androidx.annotation.NonNull;
  */
 public class LoginFragment extends BaseFragment {
 
-    static LoginFragment newInstance(){
+    static LoginFragment newInstance() {
         return new LoginFragment();
     }
 
@@ -34,9 +34,11 @@ public class LoginFragment extends BaseFragment {
     protected List<Presenter> getPresenters() {
         List<Presenter> presenterList = new ArrayList<>();
         //标题栏
-        presenterList.add(new TitleBarPresenter(false, false, "登录"));
+        presenterList.add(new TitleBarPresenter(false, false, getResources().getString(R.string.title_login)));
         //登录
         presenterList.add(new LoginPresenter());
+        //跳转到注册页面
+        presenterList.add(new ToRegisterPresenter());
         return presenterList;
     }
 }
