@@ -1,7 +1,7 @@
 package com.yu.hu.coolmusic.page.register;
 
-import com.yu.hu.coolmusic.activity.BaseFragmentActivity;
-import com.yu.hu.coolmusic.fragment.BaseFragment;
+import com.yu.hu.coolmusic.mvp.activity.BaseFragmentActivity;
+import com.yu.hu.coolmusic.mvp.fragment.BaseFragment;
 
 /**
  * 项目名：CoolMusic

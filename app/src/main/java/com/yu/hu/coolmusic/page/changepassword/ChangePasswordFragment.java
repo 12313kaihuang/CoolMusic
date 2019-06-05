@@ -1,9 +1,10 @@
 package com.yu.hu.coolmusic.page.changepassword;
 
 import com.yu.hu.coolmusic.R;
-import com.yu.hu.coolmusic.fragment.BaseFragment;
-import com.yu.hu.coolmusic.page.main.TitleBarPresenter;
-import com.yu.hu.coolmusic.presenter.Presenter;
+import com.yu.hu.coolmusic.mvp.activity.BaseActivity;
+import com.yu.hu.coolmusic.mvp.fragment.BaseFragment;
+import com.yu.hu.coolmusic.page.main.presenter.TitleBarPresenter;
+import com.yu.hu.coolmusic.mvp.presenter.Presenter;
 
 import java.util.ArrayList;
 import java.util.List;
