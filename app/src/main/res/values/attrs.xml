@@ -3,14 +3,18 @@
 
     <declare-styleable name="InputView">
         <!--输入框前面的小图标-->
-        <attr name="input_icon" format="reference" />
+        <attr name="ivIcon" format="reference" />
         <!--提示内容-->
-        <attr name="input_hint" format="string" />
+        <attr name="ivHint" format="string" />
         <!--输入类型-->
-        <attr name="input_type">
-            <enum name="phone" value="0"/>
-            <enum name="textPassword" value="1"/>
+        <attr name="ivInputType">
+            <enum name="phone" value="0" />
+            <enum name="textPassword" value="1" />
         </attr>
     </declare-styleable>
 
+    <!--主页的音乐列表标题栏-->
+    <declare-styleable name="TitleView">
+        <attr name="tvTitle" format="string" />
+    </declare-styleable>
 </resources>

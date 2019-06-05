@@ -3,5 +3,10 @@
     <dimen name="navBarHeight">56dp</dimen>
     <dimen name="navBarTextSize">22sp</dimen>
     <dimen name="marginSize">12dp</dimen>
+    <dimen name="albumMarginSize">4dp</dimen>
+    <dimen name="marginTabSize">4dp</dimen>
     <dimen name="radius">5dp</dimen>
+    <dimen name="title_size">16sp</dimen>
+    <dimen name="infoSize">14sp</dimen>
+    <dimen name="playNumSize">18dp</dimen>
 </resources>

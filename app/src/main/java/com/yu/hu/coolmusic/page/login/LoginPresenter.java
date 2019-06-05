@@ -5,8 +5,7 @@ import android.content.Intent;
 import com.blankj.utilcode.util.ActivityUtils;
 import com.yu.hu.coolmusic.MainActivity;
 import com.yu.hu.coolmusic.R;
-import com.yu.hu.coolmusic.presenter.Presenter;
-import com.yu.hu.coolmusic.util.UserUtil;
+import com.yu.hu.coolmusic.mvp.presenter.Presenter;
 import com.yu.hu.coolmusic.widget.InputView;
 
 import butterknife.BindView;

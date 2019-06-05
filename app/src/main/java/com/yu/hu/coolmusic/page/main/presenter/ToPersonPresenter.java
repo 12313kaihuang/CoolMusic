@@ -1,11 +1,11 @@
-package com.yu.hu.coolmusic.page.main;
+package com.yu.hu.coolmusic.page.main.presenter;
 
 import android.content.Intent;
 
 import com.blankj.utilcode.util.ActivityUtils;
 import com.yu.hu.coolmusic.R;
 import com.yu.hu.coolmusic.page.personal.PersonalActivity;
-import com.yu.hu.coolmusic.presenter.Presenter;
+import com.yu.hu.coolmusic.mvp.presenter.Presenter;
 
 import butterknife.OnClick;
 

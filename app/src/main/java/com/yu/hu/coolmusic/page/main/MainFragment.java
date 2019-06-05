@@ -1,11 +1,12 @@
-package com.yu.hu.coolmusic.page.main.fragment;
+package com.yu.hu.coolmusic.page.main;
 
 import com.yu.hu.coolmusic.R;
-import com.yu.hu.coolmusic.fragment.BaseFragment;
-import com.yu.hu.coolmusic.page.login.ToRegisterPresenter;
-import com.yu.hu.coolmusic.page.main.TitleBarPresenter;
-import com.yu.hu.coolmusic.page.main.ToPersonPresenter;
-import com.yu.hu.coolmusic.presenter.Presenter;
+import com.yu.hu.coolmusic.mvp.fragment.BaseFragment;
+import com.yu.hu.coolmusic.mvp.presenter.Presenter;
+import com.yu.hu.coolmusic.page.main.presenter.GridPresenter;
+import com.yu.hu.coolmusic.page.main.presenter.MusicListPresenter;
+import com.yu.hu.coolmusic.page.main.presenter.TitleBarPresenter;
+import com.yu.hu.coolmusic.page.main.presenter.ToPersonPresenter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +23,7 @@ import androidx.annotation.NonNull;
  */
 public class MainFragment extends BaseFragment {
 
-    public static MainFragment newInstance(){
+    public static MainFragment newInstance() {
         return new MainFragment();
     }
 
@@ -36,11 +37,16 @@ public class MainFragment extends BaseFragment {
     protected List<Presenter> getPresenters() {
         List<Presenter> presenterList = new ArrayList<>();
         //标题栏
-        presenterList.add(new TitleBarPresenter(false,true,
+        presenterList.add(new TitleBarPresenter(false, true,
                 getResources().getString(R.string.app_name)));
 
         //跳转到个人中心
         presenterList.add(new ToPersonPresenter());
+
+        //网格布局展示Music 推荐歌单
+        presenterList.add(new GridPresenter());
+        //最热音乐列表
+        presenterList.add(new MusicListPresenter());
         return presenterList;
     }
 }

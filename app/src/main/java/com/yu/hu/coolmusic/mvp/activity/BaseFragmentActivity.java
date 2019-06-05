@@ -1,9 +1,9 @@
-package com.yu.hu.coolmusic.activity;
+package com.yu.hu.coolmusic.mvp.activity;
 
 import android.os.Bundle;
 
 import com.yu.hu.coolmusic.R;
-import com.yu.hu.coolmusic.fragment.BaseFragment;
+import com.yu.hu.coolmusic.mvp.fragment.BaseFragment;
 
 import androidx.annotation.IdRes;
 import androidx.annotation.Nullable;

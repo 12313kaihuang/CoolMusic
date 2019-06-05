@@ -1,11 +1,11 @@
-package com.yu.hu.coolmusic.presenter;
+package com.yu.hu.coolmusic.mvp.presenter;
 
-import com.yu.hu.coolmusic.activity.BaseActivity;
-import com.yu.hu.coolmusic.fragment.BaseFragment;
+import com.yu.hu.coolmusic.mvp.activity.BaseActivity;
+import com.yu.hu.coolmusic.mvp.fragment.BaseFragment;
 
 /**
  * 项目名：CoolMusic
- * 包名：  com.yu.hu.coolmusic.presenter
+ * 包名：  com.yu.hu.coolmusic.mvp.presenter
  * 文件名：Presence
  * 创建者：HY
  * 创建时间：2019/4/21 20:10

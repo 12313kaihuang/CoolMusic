@@ -1,15 +1,13 @@
-package com.yu.hu.coolmusic.activity;
+package com.yu.hu.coolmusic.mvp.activity;
 
 import android.os.Bundle;
 
 import com.yu.hu.coolmusic.R;
-import com.yu.hu.coolmusic.presenter.Presenter;
-
-import java.util.List;
 
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import butterknife.ButterKnife;
 
 
 /**
@@ -45,7 +43,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         return R.layout.activity_base;
     }
 
-    private void prepare(){
+    private void prepare() {
+        ButterKnife.bind(this);
         onPrepare();
     }
 

@@ -3,10 +3,8 @@ package com.yu.hu.coolmusic.page.welcome;
 import android.content.Intent;
 
 import com.yu.hu.coolmusic.R;
-import com.yu.hu.coolmusic.activity.BaseActivity;
-import com.yu.hu.coolmusic.MainActivity;
+import com.yu.hu.coolmusic.mvp.activity.BaseActivity;
 import com.yu.hu.coolmusic.page.login.LoginActivity;
-import com.yu.hu.coolmusic.page.login.LoginFragment;
 
 import java.util.Timer;
 import java.util.TimerTask;

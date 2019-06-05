@@ -1,7 +1,7 @@
 package com.yu.hu.coolmusic.page.personal;
 
 import com.yu.hu.coolmusic.R;
-import com.yu.hu.coolmusic.presenter.Presenter;
+import com.yu.hu.coolmusic.mvp.presenter.Presenter;
 import com.yu.hu.coolmusic.util.UserUtil;
 
 import butterknife.OnClick;

@@ -15,6 +15,14 @@
         <activity
             android:name=".page.welcome.SplashActivity"
             android:theme="@style/FullScreen">
+
+        </activity>
+
+        <!--登录-->
+        <activity android:name=".page.login.LoginActivity" />
+
+        <!--MainActivity-->
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,18 +30,16 @@
             </intent-filter>
         </activity>
 
-        <!--登录-->
-        <activity android:name=".page.login.LoginActivity" />
-
-        <!--MainActivity-->
-        <activity android:name=".MainActivity" />
-
         <!--注册-->
         <activity android:name=".page.register.RegisterActivity" />
 
         <!--个人中心-->
         <activity android:name=".page.personal.PersonalActivity" />
+
+        <!--修改密码-->
         <activity android:name=".page.changepassword.ChangePasswordActivity" />
+        <activity android:name=".page.album.AlbumListActivity" />
+        <activity android:name=".page.play.PlayMusicActivity" />
     </application>
 
 </manifest>

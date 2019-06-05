@@ -16,4 +16,7 @@
     <string name="str_username">用户名：%s</string>
     <string name="change_password">修改密码</string>
     <string name="confirm">确 认</string>
+    <string name="recommend_list">推荐歌单</string>
+    <string name="hot_music">最热音乐</string>
+    <string name="album_list">专辑列表</string>
 </resources>

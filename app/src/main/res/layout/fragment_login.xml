@@ -19,17 +19,17 @@
         android:id="@+id/iv_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:input_hint="@string/phone_number"
-        app:input_icon="@drawable/ic_phone"
-        app:input_type="phone" />
+        app:ivHint="@string/phone_number"
+        app:ivIcon="@drawable/ic_phone"
+        app:ivInputType="phone" />
 
     <com.yu.hu.coolmusic.widget.InputView
         android:id="@+id/iv_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:input_hint="@string/password"
-        app:input_icon="@drawable/ic_password"
-        app:input_type="phone" />
+        app:ivHint="@string/password"
+        app:ivIcon="@drawable/ic_password"
+        app:ivInputType="phone" />
 
     <TextView
         android:id="@+id/tv_to_register"

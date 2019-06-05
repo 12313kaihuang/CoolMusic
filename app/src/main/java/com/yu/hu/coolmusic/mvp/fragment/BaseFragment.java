@@ -1,13 +1,13 @@
-package com.yu.hu.coolmusic.fragment;
+package com.yu.hu.coolmusic.mvp.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.yu.hu.coolmusic.activity.BaseActivity;
-import com.yu.hu.coolmusic.presenter.Presence;
-import com.yu.hu.coolmusic.presenter.Presenter;
+import com.yu.hu.coolmusic.mvp.activity.BaseActivity;
+import com.yu.hu.coolmusic.mvp.presenter.Presence;
+import com.yu.hu.coolmusic.mvp.presenter.Presenter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,6 +16,7 @@ import androidx.annotation.LayoutRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import butterknife.ButterKnife;
 
 /**
  * 项目名：IMoocMusic
@@ -34,8 +35,14 @@ public abstract class BaseFragment extends Fragment implements Presence {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(getLayoutId(), container, false);
+        ButterKnife.bind(this, mView);
+        onCreate();
         createPresenterList();
         return mView;
+    }
+
+    public void onCreate() {
+
     }
 
     private void createPresenterList() {
@@ -48,14 +55,8 @@ public abstract class BaseFragment extends Fragment implements Presence {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        onPrepare();
+        onCreated();
         bindPresenterList();
-    }
-
-    private void bindPresenterList() {
-        for (Presenter presenter : mPresenterList) {
-            presenter.bind(mView);
-        }
     }
 
     /**
@@ -64,8 +65,26 @@ public abstract class BaseFragment extends Fragment implements Presence {
      * 如设置默认值，初始化参数等
      */
     @SuppressWarnings("WeakerAccess")
-    protected void onPrepare() {
+    protected void onCreated() {
 
+    }
+
+    private void bindPresenterList() {
+        for (Presenter presenter : mPresenterList) {
+            presenter.bind(mView);
+        }
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        unBindPresenterList();
+    }
+
+    private void unBindPresenterList() {
+        for (Presenter presenter : mPresenterList) {
+            presenter.unBind();
+        }
     }
 
     /**
